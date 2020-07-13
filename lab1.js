@@ -3,8 +3,8 @@
 // 1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
 // 'Сколько фильмов вы уже посмотрели?'
 
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
-if (numberOfFilms > 0) console.log(numberOfFilms);
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+// if (numberOfFilms > 0) console.log(numberOfFilms);
 
 
 // 2) Создать объект personalMovieDB и в него поместить такие свойства:
@@ -19,7 +19,7 @@ let personalMovieDB = {
   movies: {}, 
   actors: {},
   genres: [],
-  privat: false,
+  privat: false
 };
 
 // 3) Задайте пользователю по два раза вопросы:
@@ -31,7 +31,18 @@ let personalMovieDB = {
 //         'logan': '8.1'
 //     }
 
-let lastMovie = prompt('Один из последних просмотренных фильмов?', '');
-let movieRating = prompt('На сколько оцените его? 5*', 0);
-let movies = { lastMovie : movieRating };
+// varianta mea
+// let lastMovie = prompt('Один из последних просмотренных фильмов?', '');
+// let movieRating = prompt('На сколько оцените его? 5*', 0);
+// let movies = { lastMovie : movieRating };
 
+// varianta autorului 
+let a = prompt('Один из последних просмотренных фильмов?', ''),
+    b = prompt('На сколько оцените его?', ''),
+    c = prompt('Один из последних просмотренных фильмов?', ''),
+    d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
