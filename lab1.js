@@ -87,3 +87,16 @@ if (personalMovieDB.count < 10){
 }
 console.log(personalMovieDB);
 
+
+
+let i = 1;
+while (i <= 10) console.log(i++);
+  // i++;
+  
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 3);
+
+
