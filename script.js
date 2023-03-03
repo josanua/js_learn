@@ -2,7 +2,7 @@
 
 import data from "./main.js";
 
-console.log(data);
+// console.dir(data);
 
 
 // const user = {
@@ -38,14 +38,20 @@ shops.forEach((shop, i) => {
 // console.log(map.get(shops[1]));
 // console.log(map.has(shops[4]));
 // console.log(typeof(map));
-console.log(map.size)
-console.log(map.keys())
+// console.log(map.size)
+// console.log(map.keys())
 
-for (let shop of map.keys()) {
-    console.log(shop);
-}
+// for (let shop of map.keys()) {
+//     console.log(shop);
+// }
 
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   .then(response => response.json())
+//   .then(json => console.log(json))
+
+
+// Modules an how to use them
+(function() {
+    console.log('WORK');
+}())
